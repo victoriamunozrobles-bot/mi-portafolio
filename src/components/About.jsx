@@ -31,17 +31,17 @@ const About = () => {
 
           <div className="tech-grid">
             <div className="tech-tag">
-              <Server size={16} color="var(--neon-purple)" /> Java & Spring Boot
+              <Server size={16} color="var(--c-purple)" /> Java & Spring Boot
             </div>
             <div className="tech-tag">
-              <Layout size={16} color="var(--neon-blue)" /> React & JavaScript
+              <Layout size={16} color="var(--c-pink)" /> React & JavaScript
             </div>
             <div className="tech-tag">
-              <Database size={16} color="var(--neon-pink)" /> SQL & Bases de
+              <Database size={16} color="var(--c-orange)" /> SQL & Bases de
               Datos
             </div>
             <div className="tech-tag">
-              <Cpu size={16} color="#F59E0B" /> Estructuras de Datos
+              <Cpu size={16} color="var(--c-yellow)" /> Estructuras de Datos
             </div>
           </div>
         </div>

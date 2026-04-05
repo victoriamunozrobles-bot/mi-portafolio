@@ -6,9 +6,9 @@ const Header = () => {
     <div className="container">
       <nav>
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <Terminal color="var(--neon-blue)" size={28} />
+          <Terminal color="var(--c-mint)" size={28} />
           <h2 style={{ fontSize: "1.5rem", margin: 0 }}>
-            Victoria<span style={{ color: "var(--neon-pink)" }}> Muñoz</span>
+            Victoria<span style={{ color: "var(--c-peach)" }}>.dev</span>
           </h2>
         </div>
         <div className="nav-links">

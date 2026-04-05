@@ -10,7 +10,7 @@ const Hero = () => {
             display: "flex",
             alignItems: "center",
             gap: "0.5rem",
-            color: "var(--neon-blue)",
+            color: "var(--c-purple)",
             marginBottom: "1rem",
             fontFamily: "var(--font-heading)",
           }}

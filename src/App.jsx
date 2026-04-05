@@ -9,10 +9,10 @@ import { Mail, MapPin, Send } from "lucide-react";
 function App() {
   return (
     <>
-      {/* Efectos de luz digitales de fondo */}
       <div className="glow-blob glow-1"></div>
       <div className="glow-blob glow-2"></div>
       <div className="glow-blob glow-3"></div>
+      <div className="glow-blob glow-4"></div>
 
       <Header />
       <main>
@@ -30,7 +30,7 @@ function App() {
           >
             <Send
               size={40}
-              color="var(--neon-purple)"
+              color="var(--c-peach)"
               style={{ marginBottom: "1rem" }}
             />
             <h2 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
@@ -62,7 +62,7 @@ function App() {
                   fontSize: "1.1rem",
                 }}
               >
-                <MapPin size={24} color="var(--neon-blue)" /> Temuco, Chile
+                <MapPin size={24} color="var(--c-yellow)" /> Temuco, Chile
                 (Remoto)
               </div>
               <a
@@ -75,7 +75,7 @@ function App() {
                   color: "var(--text-main)",
                 }}
               >
-                <Mail size={24} color="var(--neon-pink)" /> correo@ejemplo.com
+                <Mail size={24} color="var(--c-pink)" /> correo@ejemplo.com
               </a>
             </div>
           </div>
@@ -92,7 +92,7 @@ function App() {
         <div className="container">
           <p style={{ color: "var(--text-muted)", fontSize: "0.9rem" }}>
             © 2026 Victoria Muñoz. Escrito con React y{" "}
-            <span style={{ color: "var(--neon-pink)" }}>♥</span>.
+            <span style={{ color: "var(--c-orange)" }}>♥</span>.
           </p>
         </div>
       </footer>

@@ -1,14 +1,18 @@
 :root {
-  --bg-dark: #09090e;
-  --bg-glass: rgba(255, 255, 255, 0.03);
-  --border-glass: rgba(255, 255, 255, 0.08);
-  --text-main: #f3f4f6;
-  --text-muted: #9ca3af;
+  /* Fondo base súper oscuro con un leve tinte morado para que los colores resalten */
+  --bg-dark: #0a060f;
+  --bg-glass: rgba(255, 255, 255, 0.02);
+  --border-glass: rgba(204, 242, 241, 0.1);
+  --text-main: #fdfdfd;
+  --text-muted: #aeb2ba;
 
-  /* Colores vibrantes y difuminados para el entorno digital */
-  --neon-purple: #9d4edd;
-  --neon-blue: #00f5d4;
-  --neon-pink: #f15bb5;
+  /* Tu Paleta Trends 2024-2025 */
+  --c-mint: #ccf2f1;
+  --c-pink: #f9a3e2;
+  --c-peach: #ff9c8f;
+  --c-purple: #a790ea;
+  --c-yellow: #ffd68b;
+  --c-orange: #f16925;
 
   --font-heading: "Space Grotesk", sans-serif;
   --font-body: "Outfit", sans-serif;
@@ -29,7 +33,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Grilla digital de fondo */
+/* Grilla digital de fondo con tono mint súper suave */
 body::before {
   content: "";
   position: fixed;
@@ -38,20 +42,19 @@ body::before {
   width: 100vw;
   height: 100vh;
   background-image:
-    linear-gradient(var(--border-glass) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border-glass) 1px, transparent 1px);
+    linear-gradient(rgba(204, 242, 241, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(204, 242, 241, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
   z-index: -2;
   pointer-events: none;
 }
 
-/* Luces difuminadas (Blobs) */
+/* Luces difuminadas (Blobs) con tu nueva paleta */
 .glow-blob {
   position: fixed;
   border-radius: 50%;
   filter: blur(140px);
   z-index: -1;
-  opacity: 0.5;
   pointer-events: none;
 }
 .glow-1 {
@@ -59,22 +62,32 @@ body::before {
   left: -10%;
   width: 40vw;
   height: 40vw;
-  background: var(--neon-purple);
+  background: var(--c-purple);
+  opacity: 0.35;
 }
 .glow-2 {
   bottom: -10%;
   right: -10%;
   width: 40vw;
   height: 40vw;
-  background: var(--neon-blue);
+  background: var(--c-orange);
+  opacity: 0.25;
 }
 .glow-3 {
   top: 40%;
-  left: 40%;
-  width: 30vw;
-  height: 30vw;
-  background: var(--neon-pink);
-  opacity: 0.3;
+  left: 35%;
+  width: 35vw;
+  height: 35vw;
+  background: var(--c-pink);
+  opacity: 0.25;
+}
+.glow-4 {
+  top: 20%;
+  right: 5%;
+  width: 25vw;
+  height: 25vw;
+  background: var(--c-mint);
+  opacity: 0.2;
 }
 
 h1,
@@ -89,12 +102,12 @@ h4 {
 
 a {
   text-decoration: none;
-  color: var(--neon-blue);
+  color: var(--c-mint);
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: var(--neon-pink);
+  color: var(--c-yellow);
 }
 
 .container {
@@ -115,34 +128,36 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, var(--neon-purple), #7b2cbf);
-  color: white;
+  background: linear-gradient(135deg, var(--c-purple), var(--c-pink));
+  color: #111; /* Texto oscuro para contrastar con el fondo brillante */
   padding: 0.8rem 1.8rem;
   border-radius: 8px;
   font-family: var(--font-heading);
-  font-weight: 600;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(157, 78, 221, 0.3);
+  box-shadow: 0 0 20px rgba(249, 163, 226, 0.3);
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 25px rgba(157, 78, 221, 0.6);
-  color: white;
+  box-shadow: 0 0 30px rgba(249, 163, 226, 0.6);
+  color: #000;
 }
 
 .btn-outline {
   background: var(--bg-glass);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--border-glass);
+  border: 1px solid var(--c-mint);
+  color: var(--c-mint);
   box-shadow: none;
 }
 
 .btn-outline:hover {
-  border-color: var(--neon-blue);
-  box-shadow: 0 0 15px rgba(0, 245, 212, 0.2);
+  background: rgba(204, 242, 241, 0.1);
+  color: var(--c-mint);
+  box-shadow: 0 0 15px rgba(204, 242, 241, 0.3);
 }
 
 /* --- Nav Glassmorphism --- */
@@ -152,8 +167,12 @@ nav {
   align-items: center;
   padding: 1.5rem 2rem;
   margin-top: 1.5rem;
-  background: var(--bg-glass);
-  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(167, 144, 234, 0.02) 100%
+  );
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border-glass);
   border-radius: 16px;
 }
@@ -168,9 +187,8 @@ nav {
 .nav-links a {
   color: var(--text-main);
 }
-
 .nav-links a:hover {
-  color: var(--neon-blue);
+  color: var(--c-pink);
 }
 
 /* --- Hero --- */
@@ -180,14 +198,20 @@ nav {
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 750px;
 }
 
 .hero h1 {
   font-size: 4.5rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  background: linear-gradient(to right, #fff, var(--text-muted));
+  /* Degradado con los 3 colores más claros de tu paleta */
+  background: linear-gradient(
+    to right,
+    var(--c-mint),
+    var(--c-pink),
+    var(--c-yellow)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -199,20 +223,26 @@ nav {
   font-weight: 300;
 }
 
-/* --- Cards Glassmorphism --- */
+/* --- Cards Glassmorphism Creativas --- */
 .glass-card {
-  background: var(--bg-glass);
-  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(167, 144, 234, 0.05) 100%
+  );
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border-glass);
   border-radius: 16px;
   padding: 2.5rem;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .glass-card:hover {
-  border-color: rgba(0, 245, 212, 0.3);
+  border-color: rgba(249, 163, 226, 0.4); /* Borde rosado al pasar el mouse */
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.4),
+    inset 0 0 20px rgba(167, 144, 234, 0.1);
 }
 
 /* --- Tech Grid --- */
@@ -227,12 +257,12 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-glass);
+  background: rgba(167, 144, 234, 0.08); /* Fondo morado súper transparente */
+  border: 1px solid rgba(167, 144, 234, 0.2);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: var(--c-mint);
 }
 
 .projects-grid {
