@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLink, Github, FolderGit2 } from "lucide-react";
+import { ExternalLink, Code, FolderGit2 } from "lucide-react";
 
 const Projects = () => {
   const portfolioProjects = [
@@ -102,7 +102,7 @@ const Projects = () => {
                     color: "var(--text-main)",
                   }}
                 >
-                  <Github size={18} /> Código Base
+                  <Code size={18} /> Código Base
                 </a>
                 <a
                   href={project.liveUrl}

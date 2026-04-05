@@ -8,7 +8,7 @@ const Header = () => {
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <Terminal color="var(--neon-blue)" size={28} />
           <h2 style={{ fontSize: "1.5rem", margin: 0 }}>
-            Victoria<span style={{ color: "var(--neon-pink)" }}>.dev</span>
+            Victoria<span style={{ color: "var(--neon-pink)" }}> Muñoz</span>
           </h2>
         </div>
         <div className="nav-links">
