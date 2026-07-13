@@ -75,7 +75,8 @@ function App() {
                   color: "var(--text-main)",
                 }}
               >
-                <Mail size={24} color="var(--c-pink)" /> correo@ejemplo.com
+                <Mail size={24} color="var(--c-pink)" />{" "}
+                victoriamunozrobles@gmail.com
               </a>
             </div>
           </div>

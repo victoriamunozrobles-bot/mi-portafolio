@@ -1,12 +1,10 @@
 :root {
-  /* Fondo base súper oscuro con un leve tinte morado para que los colores resalten */
   --bg-dark: #0a060f;
   --bg-glass: rgba(255, 255, 255, 0.02);
   --border-glass: rgba(204, 242, 241, 0.1);
   --text-main: #fdfdfd;
   --text-muted: #aeb2ba;
 
-  /* Tu Paleta Trends 2024-2025 */
   --c-mint: #ccf2f1;
   --c-pink: #f9a3e2;
   --c-peach: #ff9c8f;
@@ -33,7 +31,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Grilla digital de fondo con tono mint súper suave */
 body::before {
   content: "";
   position: fixed;
@@ -49,7 +46,6 @@ body::before {
   pointer-events: none;
 }
 
-/* Luces difuminadas (Blobs) con tu nueva paleta */
 .glow-blob {
   position: fixed;
   border-radius: 50%;
@@ -123,13 +119,12 @@ section {
   border-bottom: 1px solid var(--border-glass);
 }
 
-/* --- Botones Digitales --- */
 .btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   background: linear-gradient(135deg, var(--c-purple), var(--c-pink));
-  color: #111; /* Texto oscuro para contrastar con el fondo brillante */
+  color: #111;
   padding: 0.8rem 1.8rem;
   border-radius: 8px;
   font-family: var(--font-heading);
@@ -205,7 +200,6 @@ nav {
   font-size: 4.5rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  /* Degradado con los 3 colores más claros de tu paleta */
   background: linear-gradient(
     to right,
     var(--c-mint),
@@ -223,7 +217,6 @@ nav {
   font-weight: 300;
 }
 
-/* --- Cards Glassmorphism Creativas --- */
 .glass-card {
   background: linear-gradient(
     145deg,
@@ -238,14 +231,13 @@ nav {
 }
 
 .glass-card:hover {
-  border-color: rgba(249, 163, 226, 0.4); /* Borde rosado al pasar el mouse */
+  border-color: rgba(249, 163, 226, 0.4);
   transform: translateY(-5px);
   box-shadow:
     0 15px 35px rgba(0, 0, 0, 0.4),
     inset 0 0 20px rgba(167, 144, 234, 0.1);
 }
 
-/* --- Tech Grid --- */
 .tech-grid {
   display: flex;
   flex-wrap: wrap;
@@ -257,7 +249,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(167, 144, 234, 0.08); /* Fondo morado súper transparente */
+  background: rgba(167, 144, 234, 0.08);
   border: 1px solid rgba(167, 144, 234, 0.2);
   padding: 0.5rem 1rem;
   border-radius: 8px;

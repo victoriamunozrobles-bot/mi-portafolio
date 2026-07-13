@@ -1,6 +1,7 @@
 import React from "react";
 import { ExternalLink, Code, FolderGit2 } from "lucide-react";
 import Biblioteca from "../assets/biblioteca.png";
+import bookTracker from "../assets/book-tracker-cover.png";
 
 const Projects = () => {
   const portfolioProjects = [
@@ -11,9 +12,21 @@ const Projects = () => {
         "Plataforma web Full Stack para la gestión integral de una biblioteca. Desarrollada bajo el patrón MVC, incluye autenticación con control de roles (Admin/Estudiante), gestión de inventario, sistema de préstamos y devoluciones, y un panel de métricas en tiempo real.",
       tags: ["Java", "JSP & Servlets", "MariaDB", "MVC", "Bootstrap 5"],
       githubUrl:
-        "https://github.com/victoriamunozrobles-bot/biblioteca_digital_untec.git", // Reemplaza con tu link de GitHub
+        "https://github.com/victoriamunozrobles-bot/biblioteca_digital_untec.git",
       liveUrl: "https://youtu.be/tHSpYRH390g",
       image: Biblioteca,
+    },
+    {
+      id: 3,
+      title: "Book-Tracker: registra tus lecturas",
+      description:
+        "App web full stack creada con React y Node para el registro de lecturas personales. Utiliza la API de Google Books para devolver libros en base a la búsqueda del usuario y permite agregar a biblioteca, registrar fecha de inicio y fin de la lectura, y escribir notas.",
+      tags: ["JavaSript", "React", "Node", "MongoDB", "Express"],
+      githubUrl: [
+        "https://github.com/victoriamunozrobles-bot/book-tracker-frontend.git",
+      ],
+      liveUrl: "https://book-tracker.mooo.com",
+      image: bookTracker,
     },
     {
       id: 2,
@@ -23,7 +36,6 @@ const Projects = () => {
       tags: ["En desarrollo", "Próximamente"],
       githubUrl: "#",
       liveUrl: "#",
-      // image: null
     },
   ];
 
@@ -54,7 +66,6 @@ const Projects = () => {
                 flexDirection: "column",
               }}
             >
-              {/* Sección de la Imagen del Proyecto */}
               <div
                 style={{
                   width: "100%",
@@ -81,7 +92,6 @@ const Projects = () => {
                 )}
               </div>
 
-              {/* Contenido de la Tarjeta */}
               <div
                 style={{
                   padding: "2rem",
