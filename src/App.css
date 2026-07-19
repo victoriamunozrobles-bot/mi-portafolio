@@ -155,36 +155,6 @@ section {
   box-shadow: 0 0 15px rgba(204, 242, 241, 0.3);
 }
 
-.hero {
-  padding: 8rem 0;
-  border-bottom: none;
-}
-
-.hero-content {
-  max-width: 750px;
-}
-
-.hero h1 {
-  font-size: 4.5rem;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(
-    to right,
-    var(--c-mint),
-    var(--c-pink),
-    var(--c-yellow)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  color: var(--text-muted);
-  margin-bottom: 2.5rem;
-  font-weight: 300;
-}
-
 .glass-card {
   background: linear-gradient(
     145deg,
