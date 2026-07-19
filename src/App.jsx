@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects/Projects";
 import { Mail, MapPin, Send } from "lucide-react";
 
 function App() {

@@ -175,29 +175,3 @@ section {
     0 15px 35px rgba(0, 0, 0, 0.4),
     inset 0 0 20px rgba(167, 144, 234, 0.1);
 }
-
-.tech-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.tech-tag {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(167, 144, 234, 0.08);
-  border: 1px solid rgba(167, 144, 234, 0.2);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  color: var(--c-mint);
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
